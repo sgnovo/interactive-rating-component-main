@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Styling -->
+    <link rel="stylesheet" href="index.css">
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+    <title>Frontend Mentor | Interactive rating component</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="rating-state flow">
+                <!-- Rating state start -->
+                <img class="star" src="images/icon-star.svg" alt="">
+
+                <h1>How did we do?</h1>
+
+                <p>
+                    Please let us know how we did with your support request. All feedback is appreciated
+                    to help us improve our offering!
+                </p>
+
+                <ol class="number-rating">
+                    <li><button class="number-btn">1</button></li>
+                    <li><button class="number-btn">2</button></li>
+                    <li><button class="number-btn">3</button></li>
+                    <li><button class="number-btn">4</button></li>
+                    <li><button class="number-btn">5</button></li>
+                </ol>
+
+                <button class="submit-btn" id="submit-btn">Submit</button>
+
+                <!-- Rating state end -->
+            </div>
+
+            <div class="thankyou-state flow hidden">
+                 <!-- Thank you state start -->
+                <img src="images/illustration-thank-you.svg" alt="">
+
+                <p class="rate-selected">
+                    You selected 
+                    <span id="rating"></span>
+                    out of 5
+                </p>
+
+                <h1>Thank you!</h1>
+
+                <p>
+                    We appreciate you taking the time to give a rating. If you ever need more support,
+                    don’t hesitate to get in touch!
+                </p>
+
+                <!-- Thank you state end -->
+                <button class="rate-again" id="rate-again">Rate Again</button>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+            Coded by <a href="https://www.frontendmentor.io/profile/sgnovo">Novo Saga</a>.
+          </div>
+    </footer>
+    
+    <!-- Javascript -->
+    <script src="index.js"></script>
+</body>
+</html>
